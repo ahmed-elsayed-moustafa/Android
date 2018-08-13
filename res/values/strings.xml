@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EduData</string>
+
+    <!-- Main and DisplayAppInfo layout -->
+    <string name="button_info">\?</string>
+    <string name="description_logo">EduData</string>
+    <string name="button_country">Browse By Country</string>
+    <string name="button_topic">Browse By Topic</string>
+    <string name="notice_copyright">Data provided by © 2014 The World Bank Group.</string>
+    <string name="button_close"><b>×</b></string>
+    <string name="info_app">EduData is an application that provides information about education around the globe and allows you to compare different aspects of this topic by indicators or countries.\n\nDeveloped by Group 2-I: Polly Apostolova, Maher Atashfaraz, Ahmed Elsayed, Diana Ghitun, Yannick Jeras, CheokHo Mai, and Dillan Patel.\n\nA special thank you goes out to Ephi Fonts for providing us with the Helvetica Neue font and to lecho for making the hellocharts-android api freely available on GitHub. A all credit for the country flag icons goes to Icon Drawer at http://icondrawer.com/flag-icons.php.</string>
+
+    <!-- Country and Topic List layout -->
+    <string name="Search">Search</string>
+    <string name="action_settings">Settings</string>
+    <string name="country_title">Browse Countries</string>
+    <string name="indicator_title">Browse Topics</string>
+    <string name="country">Country:</string>
+    <string name="capital">Capital:</string>
+    <string name="longitude">Longitude:</string>
+    <string name="latitude">Latitude:</string>
+    <string name="population">Population*:</string>
+    <string name="pop_star_text">*figure based on data in 2013.</string>
+    <string name="action_search">Search Countries</string>
+    <string name="amend_countries">Amend Selected Countries</string>
+    
+    <!-- Line Graph layout -->
+    <string name="graph_title">Line Graph</string>
+
+    <!-- Actionbar layout -->
+    <string name="button_done">Done</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">Ok</string>
+</resources>

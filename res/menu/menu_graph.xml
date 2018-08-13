@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.seg2.edudata.graphs.GraphActivity">
+    <item
+            android:id="@+id/action_reset"
+            android:title="Reset chart"
+            android:showAsAction="never"/>
+    <!--<item
+            android:id="@+id/action_add_line"
+            android:title="Add line"
+            app:showAsAction="never"/>-->
+    <item
+            android:id="@+id/action_toggle_cubic"
+            android:title="Toggle smoothness"
+            android:showAsAction="never"/>
+    <item
+            android:id="@+id/action_toggle_area"
+            android:title="Toggle area"
+            android:showAsAction="never"/>
+    <item
+            android:id="@+id/action_toggle_lines"
+            android:title="Toggle lines"
+            android:showAsAction="never"/>
+    <item
+            android:id="@+id/action_toggle_labels"
+            android:title="Toggle labels"
+            android:showAsAction="never"/>
+
+</menu>

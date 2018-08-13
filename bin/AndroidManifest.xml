@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.seg2.edudata"
+          android:versionCode="1"
+          android:versionName="1.0">
+
+    <uses-sdk android:minSdkVersion="16"
+              android:targetSdkVersion="20"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application android:label="@string/app_name"
+                 android:icon="@drawable/ic_launcher"
+                 android:allowBackup="true"
+                 android:theme="@style/AppTheme">
+
+        <activity android:name="com.seg2.edudata.MainActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.seg2.edudata.DisplayAppInfoActivity"
+                  android:parentActivityName="MainActivity"
+                  android:label="@string/app_name" >
+         <!--   <meta-data android:name="android.support.PARENT_ACTIVITY"
+                       android:value="com.example.Project2App.MainActivity"/>-->
+        </activity>
+
+        <activity android:name="com.seg2.edudata.lists.CountryActivity"
+                  android:parentActivityName="MainActivity"
+                  android:label="@string/country_title" >
+
+        </activity>
+
+        <activity android:name="com.seg2.edudata.lists.IndicatorActivity"
+                  android:parentActivityName="MainActivity"
+                  android:label="@string/indicator_title" >
+
+        </activity>
+        
+        <activity android:name="com.seg2.edudata.graphs.LineChartActivity"
+            	  android:parentActivityName="MainActivity"
+            	  android:label="@string/graph_title" >
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                	   android:value="com.seg2.edudata.lists.CountryActivity" />
+            
+        </activity>
+    </application>
+</manifest>
