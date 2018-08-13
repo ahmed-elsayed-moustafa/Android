@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EduData</string>
+
+    <!-- Main and DisplayAppInfo layout -->
+    <string name="button_info">\?</string>
+    <string name="description_logo">EduData</string>
+    <string name="button_country">Graph by country</string>
+    <string name="button_topic">Graph by indicator</string>
+    <string name="notice_copyright">Data provided by © 2014 The World Bank Group.</string>
+    <string name="button_close">x</string>
+    <string name="info_app">EduData is an application that provides information about education around the globe and that allows you to compare different aspects of this topic by indicators or by countries.\n\nDeveloped by blablabla\n\nA special thank you goes out to blablabla</string>
+
+    <!-- Country and Topic List layout -->
+    <string name="Search">Search</string>
+    <string name="action_settings">Settings</string>
+    <string name="country_title">Browse Countries</string>
+    <string name="indicator_title">Browse Indicators</string>
+    <string name="country">Country:</string>
+    <string name="capital">Capital:</string>
+    <string name="longitude">Longitude:</string>
+    <string name="latitude">Latitude:</string>
+    <string name="population">Population*:</string>
+    <string name="pop_star_text">*figure based on data in 2013.</string>
+    <string name="back"><b>‹</b>Back</string>
+    
+    <!-- Line Graph layout -->
+    <string name="graph_title">Line Graph</string>
+
+    <!-- Actionbar layout -->
+    <string name="button_done">Done</string>
+</resources>

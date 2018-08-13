@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.seg2.edudata"
+          android:versionCode="1"
+          android:versionName="1.0">
+
+    <uses-sdk android:minSdkVersion="19"
+              android:targetSdkVersion="20"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application android:label="@string/app_name"
+                 android:icon="@drawable/ic_launcher"
+                 android:allowBackup="true"
+                 android:theme="@style/AppTheme">
+
+        <activity android:name="com.seg2.edudata.MainActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="SplashScreen"
+                android:theme="@style/transparentTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"></action>
+                <category android:name="android.intent.category.LAUNCHER"></category>
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.seg2.edudata.DisplayAppInfoActivity"
+                  android:label="@string/app_name"
+                  android:configChanges="keyboardHidden|orientation|screenSize"
+                  android:parentActivityName="com.seg2.edudata.MainActivity">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.seg2.edudata.MainActivity"/>
+        </activity>
+
+        <activity android:name="com.seg2.edudata.lists.CountryActivity"
+                  android:label="@string/country_title"
+                  android:configChanges="keyboardHidden|orientation|screenSize"
+                  android:parentActivityName="com.seg2.edudata.MainActivity">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.seg2.edudata.MainActivity"/>
+        </activity>
+
+        <activity android:name="com.seg2.edudata.lists.IndicatorActivity"
+                  android:label="@string/indicator_title"
+                  android:configChanges="keyboardHidden|orientation|screenSize"
+                  android:parentActivityName="com.seg2.edudata.MainActivity">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.seg2.edudata.MainActivity"/>
+        </activity>
+
+        <activity
+                android:name=".graphs.GraphActivity"
+                android:label="@string/app_name"
+                android:configChanges="keyboardHidden|orientation|screenSize"
+                android:parentActivityName="com.seg2.edudata.MainActivity">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.seg2.edudata.MainActivity"/>
+        </activity>
+        
+    </application>
+</manifest>

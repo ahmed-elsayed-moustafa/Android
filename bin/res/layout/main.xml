@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/layout"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:background="#ffffff"
+
+                tools:context="com.seg2.edudata.MainActivity$PlaceholderFragment">
+
+    <Button android:id="@+id/button_info" style="@style/buttonSmall"
+
+            android:text="@string/button_info"
+
+            android:onClick="displayInformation"/>
+
+    <ImageView android:id="@+id/logo"
+               android:contentDescription="@string/description_logo"
+
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerHorizontal="true"
+               android:paddingTop="50dp"
+               android:paddingBottom="50dp"
+
+               android:src="@drawable/edudata"/>
+
+    <Button android:id="@+id/button_country"
+
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/logo"
+
+            android:background="@drawable/button_shape"
+            android:text="@string/button_country"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+
+            android:onClick="browseCountry"/>
+
+    <Button android:id="@+id/button_topic"
+
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/button_country"
+
+            android:background="@drawable/button_shape"
+            android:text="@string/button_topic"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+
+            android:onClick="browseIndicator"/>
+
+    <TextView style="@style/copyrightnotice"/>
+</RelativeLayout>

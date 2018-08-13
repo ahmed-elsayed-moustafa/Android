@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/layout"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:background="#ffffff"
+
+                tools:context="com.seg2.edudata.MainActivity$PlaceholderFragment">
+
+    <Button android:id="@+id/button_info" style="@style/buttonSmall"
+
+            android:text="@string/button_info"
+            android:onClick="displayInformation"/>
+
+    <ImageView android:id="@+id/logo"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+
+               android:src="@drawable/edudata"
+               android:contentDescription="@string/description_logo" android:layout_above="@+id/button_country"
+               android:layout_centerHorizontal="true"/>
+
+    <TextView android:id="@+id/copyrightnotice" style="@style/copyrightnotice"/>
+
+    <Button android:id="@+id/button_topic" style="@style/buttonLarge"
+            android:layout_above="@id/copyrightnotice"
+
+            android:text="@string/button_topic"
+
+            android:onClick="browseIndicator"/>
+
+    <Button android:id="@+id/button_country" style="@style/buttonLarge"
+            android:layout_above="@id/button_topic"
+
+            android:text="@string/button_country"
+
+            android:onClick="browseCountry"/>
+</RelativeLayout>
